@@ -4,7 +4,9 @@
 
 This program will help you who want to learn the C language and are new to programming.
 I recommend that you go directly into linux because there is a greater opportunity to learn programming and at the same we can use bash script and the program starts automatically.
+
 Two different ways:
+
 1- The idea is that you can use it as a regular c file if you are completely new to programming with any compiler/program like VsCode Visual Studio Code, CodeBlocks or Visual Studio.
 2- You can let it start itself in Linux with bash script and by using TMUX in Linux, then you will be asked every few minutes and can exit the program without ending the script.
 
@@ -13,4 +15,26 @@ The program will be developed during summer 2024.
 By
 Rasheed Dadoush
 
+########################
+########################
+
+A little info and command about TMUX and how to start the bash script in Linux:
+
+To start the program in Linux when you are in the program folder, use the following command: ./PROGRAM_NAME &
+For example in this program it´s: ./interrupt_autogame_main.sh &
+You can check if the program is running in the background using the command: jobs
+
+
+TMUX Commands:
+To start TMUX: tmux
+To list TMUX sessions: tmux ls
+To switch to a TMUX session: tmux attach -t autogame
+
+
+
+
+
+
+
 */
+
