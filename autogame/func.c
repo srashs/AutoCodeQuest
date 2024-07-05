@@ -77,36 +77,34 @@ void pointerToPointerChallenge() {
 }
 
 void arrayChallenge() {
-    int arr1[3] = {1, 2, 3};
-    int arr2[3] = {4, 5, 6};
-
-    int question = rand() % 2;
-
+    int array[8], i;
+    int question = rand() % 7;
+	
+	for (i = 0; i < 8; ++i)
+  		{
+    		array[i]= rand() % 30;
+  		}
     printf("\nArray Challenge:\n");
 
-    if (question == 0) {
-        printf("You have an integer array 'arr1' with values {1, 2, 3}.\n");
-        printf("What is the value at index 1 of 'arr1'? ");
-        
-        int answer;
-        scanf("%d", &answer);
+        printf("You have an integer array with values: \n");
+        printf("{ ");
+        printf(" %d ", array[0]);
 
-        if (answer == arr1[1]) {
-            printf("Correct! The value at index 1 of 'arr1' is %d.\n", arr1[1]);
-        } else {
-            printf("Incorrect. The correct answer is %d.\n", arr1[1]);
-        }
-    } else {
-        printf("You have an integer array 'arr2' with values {4, 5, 6}.\n");
-        printf("What is the value at index 2 of 'arr2'? ");
-        
-        int answer;
-        scanf("%d", &answer);
+			for (i = 1; i < 8; ++i)
+  				{
+    			printf(", %d ", array[i]);
+  				}
 
-        if (answer == arr2[2]) {
-            printf("Correct! The value at index 2 of 'arr2' is %d.\n", arr2[2]);
+			printf(" }");
+			printf("\n What is the value at index %d \n Please enter the answer:", question	);
+
+			int answer;
+			scanf("%d", &answer);
+
+        if (answer == array[question] ) {
+            printf("Correct! The value at index %d is %d.\n",question, array[question]);
         } else {
-            printf("Incorrect. The correct answer is %d.\n", arr2[2]);
+            printf("Incorrect. The correct answer is %d.\n", array[question] );
         }
-    }
+    
 }
