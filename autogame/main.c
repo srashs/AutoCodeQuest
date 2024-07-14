@@ -1,9 +1,10 @@
 #include "autogame.h"
+#include "arrayFunc.c"
 #include "func.c"
 
 int main() {
     int choice;
-    srand(time(0)); // Initialize random number generator.
+    srand(time(0)); 
     while (1) {
 	printf("\n\n**********\n***********\n");
         printf("Welcome to CQuest!\n");
@@ -23,7 +24,7 @@ int main() {
                 pointerToPointerChallenge();
                 break;
             case 3:
-                arrayChallenge();
+                arrayChallenge_randomSelect();
                 break;
             case 4:
                 exit(0);
